@@ -90,6 +90,9 @@ body {
     letter-spacing: 0.6px;
 }
 
+.header-list__img{
+    padding-right: 185px;
+}
 
 .header-title {
     color: #0D302C;
@@ -636,6 +639,7 @@ body {
 .application-column{
     display: flex;
 	flex-direction: column;
+    align-items: center;
 	flex-basis: 100%;
 	flex: 1;
     width: 600px;
@@ -742,6 +746,8 @@ body {
 }
 
 .footer-img{
+    padding-left: 915px;
+    padding-top: 568px;
     position: absolute;
     z-index: 1;
 }
