@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wawe</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="creset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,20 +19,20 @@
         <div class="header">
             <ul class="header-list">
                 <li class="header-list__img">
-                <img src="img/логоww.svg" class="header"></img>
+                    <img src="img/логоww.svg" class="header"></img>
                 </li>
-                <li class="header-list__item">О нас</li>
-                <li class="header-list__item">Услуги</li>
-                <li class="header-list__item">Стоимость</li>
-                <li class="header-list__item">Блог</li>
-                <li class="header-list__item">Команда</li>
-                <li class="header-list__item">Контакты</li>
+                <li><a class="header-list__item" href="#about-us">О нас</a></li>
+                <li><a class="header-list__item" href="#about-us2">Услуги</a></li>
+                <li><a class="header-list__item" href="#about-us3">Стоимость</a></li>
+                <li><a class="header-list__item" href="#about-us4">Блог</a></li>
+                <li><a class="header-list__item" href="#about-us5">Команда</a></li>
+                <li><a class="header-list__item" href="#about-us6">Контакты</a></li>
             </ul>
             <h1 class="header-title">WAWE</h1>
             <p class="header-text">Школа серфинга на канарских Островах</p>
         </div>
 
-        <section class="school">
+        <section id="about-us" class="school">
             <h2 class="school-title"> О ШКОЛЕ, О СЕРФИНГЕ, О КАНАРАХ </h2>
             <h2 class="school-title__slash">/</h2>
             <div class="school-columns">
@@ -89,7 +90,7 @@
 
 
 
-        <section class="school-data">
+        <section  id="about-us2" class="school-data">
             <img src="img/slash.svg" class="data-slash">
             <h2 class="data-title">В ШКОЛЕ ВЫ ПОЛУЧИТЕ</h2>
             <div class="data-columns">
@@ -145,7 +146,7 @@
 
 
 
-        <section class="school-info">
+        <section  class="school-info">
             <div class="info-columns">
                 <div class="left-column__inf">
                     <h2 class="info-title__slash">/</h2>
@@ -201,11 +202,15 @@
 
         <section class="video">
             <div class="video-wrapper">
-            <video id="video-frame" class="video-frame" src="img/СЕРФИНГ.mp4" poster="img/video.png"
-            preload="auto" autoplay></video>
+                <video id="video-frame" class="video-frame" src="img/СЕРФИНГ.mp4" poster="img/video.png" preload="auto"
+                    autoplay></video>
             </div>
-            
-            <button class="video__btn"></button>
+
+            <button class="video__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="88" viewBox="0 0 75 88" fill="none">
+                    <path d="M75 44L0 87.3013L0 0.69873L75 44Z" fill="#373A39" />
+                </svg>
+            </button>
         </section>
 
         <section class="statistics">
@@ -228,7 +233,26 @@
                 </div>
             </div>
         </section>
-        <section class="command">
+
+        <div id="about-us4" class="slider-wrapper">
+            <section class="slider mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                    <div class="swiper-slide"><img src="img/slide.png" class="slide-img"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+        </div>
+        
+
+        <section id="about-us5" class="command">
             <img src="img/slash.svg" class="command-slash">
             <h2 class="com-title">НАША КОМАНДА</h2>
             <div class="com-columns">
@@ -250,7 +274,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="about-us3" class="services">
             <div class="services-background"></div>
             <img src="img/slash.svg" class="services-slash">
             <h2 class="services-title">ПАКЕТЫ УСЛУГ</h2>
@@ -295,6 +319,14 @@
             </div>
         </section>
 
+        <section class="map">
+            <iframe
+                class="map-wrapper"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d157864.7977020754!2d-13.612288765902093!3d29.036163587586607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1689834228616!5m2!1sru!2sru"
+                width="1473" height="640" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>x
+        </section>
+
         <section class="application">
             <img src="img/slash.svg" class="application-slash">
             <h2 class="application-title">ОСТАВИТЬ ЗАЯВКУ</h2>
@@ -306,7 +338,7 @@
                         время<br><br><br></p>
                     <button class="app-but">ОТПРАВИТЬ</button>
                 </div>
-                <div class="application-column">
+                <div id="about-us6" class="application-column">
                     <div class="app-background"></div>
                     <p class="app-data__right">Есть вопрос?<br>
                         Вы можете связаться с нами:<br><br></p>
@@ -326,11 +358,16 @@
             </div>
         </section>
     </div>
-    
+
     <div class="footer">
         <div class="footer-background"></div>
         <img src="img/логоww.svg" class="footer-img"></img>
     </div>
+
+
+    <script src="js/play.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
